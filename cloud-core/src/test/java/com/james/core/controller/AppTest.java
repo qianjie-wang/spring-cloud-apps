@@ -1,4 +1,4 @@
-package controller;
+package com.james.core.controller;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
