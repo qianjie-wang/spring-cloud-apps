@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      fail-fast: false
+      label:
+      profile:
+      server:
+        git:
+          uri:
+          username:
+          password:
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 2
+  client:
+    service-url:
+     default-zone: http://localhost:8080/eureka/
+    register-with-eureka: true
