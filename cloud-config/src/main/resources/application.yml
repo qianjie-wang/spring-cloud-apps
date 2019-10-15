@@ -6,18 +6,27 @@ spring:
   cloud:
     config:
       fail-fast: false
-      label:
-      profile:
+#      label:
+#      profile:
       server:
         git:
           uri:
           username:
           password:
+      discovery:
+        enabled: true
+
+
+
 eureka:
-  instance:
-    hostname: localhost
-    lease-renewal-interval-in-seconds: 2
+#  instance:
+#    lease-renewal-interval-in-seconds: 2
+#    instance-id: app2
   client:
-    service-url:
-     default-zone: http://localhost:8080/eureka/
-    register-with-eureka: true
+    serviceUrl:
+          defaultZone: http://localhost:8080/eureka/
+#    register-with-eureka: false
+#logging:
+#  level:
+#    root: debug
+
